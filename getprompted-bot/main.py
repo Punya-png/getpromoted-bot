@@ -1,6 +1,7 @@
+import os 
 from telegram.ext import Updater, CommandHandler
 
-TOKEN = 7655637961:AAG5tSFfughqKcvi-_Zw7B34VPONHD4uEmQ
+TOKEN = os.getenv("TOKEN")
 
 def start(update, context):
     update.message.reply_text("👋 Welcome to GetPrompted!\nPool SOL. Pump Tokens. Get Rewarded.")
